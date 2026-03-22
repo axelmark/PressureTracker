@@ -43,3 +43,7 @@ An application for tracking blood pressure. It allows you to record measurements
 - **Export:** CSV, PDF using PdfDocument
 
 ---
+
+## 📄 License
+
+This project is licensed under the Apache License 2.0.
