@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="systolicColor" format="color" />
+    <attr name="diastolicColor" format="color" />
+    <attr name="pulseColor" format="color" />
+    <attr name="medicationNotTakenColor" format="color" />
+</resources>

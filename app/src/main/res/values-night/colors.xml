@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary (Светлая бирюза для акцентов в темноте) -->
+    <color name="md3_primary">#80DEEA</color>
+    <color name="md3_on_primary">#00363C</color>
+    <color name="md3_primary_container">#004F58</color>
+    <color name="md3_on_primary_container">#B2EBF2</color>
+
+    <!-- Secondary (Приглушенные тона для меню) -->
+    <color name="md3_secondary">#B1CCCC</color>
+    <color name="md3_on_secondary">#1D3535</color>
+    <color name="md3_secondary_container">#354A4B</color>
+    <color name="md3_on_secondary_container">#CFE7E8</color>
+
+    <!-- Tertiary (Акцент для пульса) -->
+    <color name="md3_tertiary">#80CBC4</color>
+    <color name="md3_on_tertiary">#003732</color>
+
+    <!-- Error (Критическое давление — более мягкий розовый) -->
+    <color name="md3_error">#FFB4AB</color>
+    <color name="md3_on_error">#690005</color>
+
+    <!-- Surface & Background (Глубокий темный с хвойным отливом) -->
+    <color name="md3_surface">#191C1C</color>
+    <color name="md3_on_surface">#E1E3E3</color>
+    <color name="md3_surface_variant">#3F4949</color>
+    <color name="md3_on_surface_variant">#BFC8C8</color>
+    <color name="md3_background">#191C1C</color>
+    <color name="md3_on_background">#E1E3E3</color>
+
+    <!-- Специальные цвета (Адаптированы под контраст) -->
+    <color name="systolic_color">#FF8A80</color>
+    <color name="diastolic_color">#4DB6AC</color>
+    <color name="pulse_color">#A5D6A7</color>
+    <color name="medication_not_taken_color">#707979</color>
+
+    <!-- BMI (Пастельные тона для темного фона) -->
+    <color name="bmi_underweight">#4FC3F7</color>
+    <color name="bmi_normal">#80CBC4</color>
+    <color name="bmi_overweight">#FFE082</color>
+    <color name="bmi_obese">#EF9A9A</color>
+
+    <color name="card_glass_surface">#4D191C1C</color>
+
+    <color name="md3_tertiary_container">#004D4D</color>
+    <color name="md3_on_tertiary_container">#B2DFDB</color>
+    <color name="md3_error_container">#FFDAD6</color>
+    <color name="md3_on_error_container">#410002</color>
+</resources>

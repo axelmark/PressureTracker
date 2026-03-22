@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Размеры текста (sp) -->
+    <dimen name="text_headline_large">24sp</dimen>
+    <dimen name="text_headline_medium">20sp</dimen>
+    <dimen name="text_headline_small">18sp</dimen>
+    <dimen name="text_body_large">16sp</dimen>
+    <dimen name="text_body_medium">14sp</dimen>
+    <dimen name="text_body_small">12sp</dimen>
+    <dimen name="text_caption">12sp</dimen>
+    <dimen name="text_button">14sp</dimen>
+    <dimen name="text_pressure_value">24sp</dimen>
+    <dimen name="text_pulse_value">16sp</dimen>
+    <dimen name="text_date">12sp</dimen>
+    <dimen name="text_note">14sp</dimen>
+    <dimen name="text_status">14sp</dimen>
+
+    <!-- Высоты элементов -->
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+
+    <!-- Размеры иконок -->
+    <dimen name="icon_small">20dp</dimen>
+    <dimen name="icon_medium">24dp</dimen>
+    <dimen name="icon_large">48dp</dimen>
+
+
+    <!-- Компактные отступы для карточки -->
+    <dimen name="spacing_medium_compact">12dp</dimen>
+    <dimen name="spacing_small_compact">8dp</dimen>
+    <dimen name="spacing_xsmall_compact">6dp</dimen>
+    <dimen name="spacing_xxsmall_compact">4dp</dimen>
+
+    <!-- Элементы карточки -->
+    <dimen name="item_padding">16dp</dimen>
+    <dimen name="item_margin">4dp</dimen>  <!-- было 8dp -->
+    <dimen name="note_min_height">100dp</dimen>
+
+
+    <dimen name="spacing_xxsmall">4dp</dimen>
+    <dimen name="spacing_xsmall">8dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_xxlarge">48dp</dimen>
+
+</resources>

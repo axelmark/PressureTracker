@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/item_margin"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/card_glass_surface"
+    app:strokeColor="?attr/colorPrimaryContainer"
+    app:strokeWidth="1dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Фон свайпа (без изменений) -->
+        <LinearLayout
+            android:id="@+id/swipeBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorErrorContainer"
+            android:gravity="center_vertical|end"
+            android:orientation="horizontal"
+            android:padding="@dimen/spacing_medium"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="@dimen/icon_medium"
+                android:layout_height="@dimen/icon_medium"
+                android:src="@drawable/ic_delete"
+                app:tint="?attr/colorOnErrorContainer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:textColor="?attr/colorOnErrorContainer"
+                android:layout_marginStart="@dimen/spacing_xsmall"/>
+        </LinearLayout>
+
+        <!-- Основное содержимое с ConstraintLayout -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_medium_compact"
+            android:background="?attr/selectableItemBackground">
+
+            <!-- Давление: занимает всё доступное пространство до блока пульса -->
+            <TextView
+                android:id="@+id/pressureValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSurface"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_pressure_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pulseBlock"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <!-- Блок пульса (сердечко + значение) – ширина по содержимому -->
+            <LinearLayout
+                android:id="@+id/pulseBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toStartOf="@+id/medicationIndicator"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/pressureValue"
+                android:layout_marginEnd="@dimen/spacing_small">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="❤"
+                    android:textColor="?attr/colorTertiary"
+                    android:textSize="@dimen/text_pulse_value"
+                    android:paddingEnd="4dp" />
+
+                <TextView
+                    android:id="@+id/pulseValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:textSize="@dimen/text_pulse_value" />
+            </LinearLayout>
+
+            <!-- Индикатор лекарства: всегда у правого края -->
+            <TextView
+                android:id="@+id/medicationIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●"
+                android:textColor="?attr/medicationNotTakenColor"
+                android:textSize="@dimen/text_pulse_value"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/pressureValue"
+                android:layout_marginStart="8dp" />
+
+            <!-- Строка статуса (растягивается до даты) -->
+            <TextView
+                android:id="@+id/statusLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xsmall_compact"
+                android:textColor="?attr/colorSecondary"
+                android:textStyle="italic"
+                android:textSize="@dimen/text_status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dateValue"
+                app:layout_constraintTop_toBottomOf="@+id/pressureValue"/>
+
+            <!-- Дата – всегда справа -->
+            <TextView
+                android:id="@+id/dateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_xsmall_compact"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:textSize="@dimen/text_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pressureValue"/>
+
+            <!-- Заголовок заметки -->
+            <LinearLayout
+                android:id="@+id/noteHeader"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/expandIcon"
+                app:layout_constraintTop_toBottomOf="@+id/statusLabel"
+                android:layout_marginTop="@dimen/spacing_medium_compact"
+                tools:ignore="NotSibling">
+
+                <TextView
+                    android:id="@+id/noteLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="?attr/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_note"
+                    android:text="@string/note"/>
+
+                <ImageView
+                    android:id="@+id/expandIcon"
+                    android:layout_width="@dimen/icon_medium"
+                    android:layout_height="@dimen/icon_medium"
+                    android:src="@drawable/ic_expand_more"
+                    app:tint="?attr/colorPrimary"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="4dp" />
+            </LinearLayout>
+
+            <!-- Текст заметки -->
+            <TextView
+                android:id="@+id/noteValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:paddingTop="@dimen/spacing_xxsmall_compact"
+                android:visibility="gone"
+                android:textSize="@dimen/text_note"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noteHeader"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

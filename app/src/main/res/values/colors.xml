@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary (Бирюзовая основа: кнопки, FAB, активные состояния) -->
+    <color name="md3_primary">#00838F</color>
+    <color name="md3_on_primary">#FFFFFF</color>
+    <color name="md3_primary_container">#B2EBF2</color>
+    <color name="md3_on_primary_container">#002022</color>
+
+    <!-- Secondary (Спокойный акцент: меню, иконки) -->
+    <color name="md3_secondary">#4D6262</color>
+    <color name="md3_on_secondary">#FFFFFF</color>
+    <color name="md3_secondary_container">#CFE7E8</color>
+    <color name="md3_on_secondary_container">#091F1F</color>
+
+    <!-- Tertiary (Акцент для важных уведомлений или пульса) -->
+    <color name="md3_tertiary">#4DB6AC</color>
+    <color name="md3_on_tertiary">#FFFFFF</color>
+    <color name="md3_tertiary_container">#B2DFDB</color>
+    <color name="md3_on_tertiary_container">#00201A</color>
+
+    <!-- Error (Критическое давление) -->
+    <color name="md3_error">#E57373</color>
+    <color name="md3_on_error">#FFFFFF</color>
+    <color name="md3_error_container">#FFDAD6</color>
+    <color name="md3_on_error_container">#410002</color>
+
+    <!-- Surface & Background (Чистый фон с легким оттенком мяты) -->
+    <color name="md3_surface">#F4F9F9</color>
+    <color name="md3_on_surface">#191C1C</color>
+    <color name="md3_surface_variant">#DBE4E4</color>
+    <color name="md3_on_surface_variant">#3F4949</color>
+    <color name="md3_background">#F4F9F9</color>
+    <color name="md3_on_background">#191C1C</color>
+
+    <!-- Специальные цвета (Замеры давления) -->
+    <color name="systolic_color">#FF6B6B</color> <!-- Мягкий красный -->
+    <color name="diastolic_color">#4FB3AD</color> <!-- Темная бирюза -->
+    <color name="pulse_color">#81C784</color>     <!-- Спокойный зеленый -->
+    <color name="medication_not_taken_color">#AAB4B4</color>
+
+    <!-- BMI (Гармонируют с бирюзой) -->
+    <color name="bmi_underweight">#81D4FA</color>
+    <color name="bmi_normal">#4DB6AC</color>
+    <color name="bmi_overweight">#FFD54F</color>
+    <color name="bmi_obese">#FF8A65</color>
+
+    <color name="card_glass_surface">#99F4F9F9</color>
+    <color name="card_glass_primary">#2600838F</color>
+</resources>
