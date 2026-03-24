@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- ===== Глобальные и общие строки ===== -->
     <string name="app_name">Трекер давления</string>
     <string name="save">Сохранить</string>
     <string name="delete">Удалить</string>
     <string name="expand">Развернуть/Свернуть</string>
 
+    <!-- ===== Навигация и основные экраны ===== -->
     <string name="menu_settings">Настройки</string>
     <string name="menu_export">Экспорт данных</string>
     <string name="chart">График</string>
@@ -12,20 +14,21 @@
     <string name="add_first_measurement">Добавить первое измерение</string>
     <string name="about">О приложении</string>
 
+    <!-- ===== Экран добавления/редактирования измерения ===== -->
     <string name="systolic">Систолическое</string>
     <string name="diastolic">Диастолическое</string>
     <string name="pulse">Пульс</string>
     <string name="note">Заметка</string>
-    <string name="measurement_saved">Измерение сохранено</string>
-    <string name="check_input_data">Проверьте введенные данные</string>
     <string name="medication_taken">Принял(а) лекарство</string>
     <string name="medication_taken_desc">Принято лекарство</string>
 
+    <!-- ===== Категории давления (статусы) ===== -->
     <string name="pressure_low">Пониженное</string>
     <string name="pressure_normal">Норма</string>
     <string name="pressure_elevated">Повышенное</string>
     <string name="pressure_high">Высокое</string>
 
+    <!-- ===== Экран графиков ===== -->
     <string name="chart_title">Графики давления</string>
     <string name="week">Неделя</string>
     <string name="month">Месяц</string>
@@ -35,6 +38,7 @@
     <string name="year_period">Данные за год</string>
     <string name="no_data_for_chart">Нет данных для построения графика</string>
 
+    <!-- ===== Настройки напоминаний ===== -->
     <string name="notification_settings">Настройка напоминаний</string>
     <string name="enable_notifications">Временно включить напоминания</string>
     <string name="daily">Ежедневно</string>
@@ -45,45 +49,6 @@
     <string name="notification_channel_name">Напоминания о давлении</string>
     <string name="notification_title">Пора измерить давление!</string>
     <string name="notification_text">Не забудьте записать результаты в приложении</string>
-
-    <string name="user_data_title">Данные пользователя</string>
-    <string name="name">Имя</string>
-    <string name="age">Возраст</string>
-    <string name="gender">Пол</string>
-    <string name="male">Мужской</string>
-    <string name="female">Женский</string>
-    <string name="height">Рост (см)</string>
-    <string name="weight">Вес (кг)</string>
-    <string name="calculate_bmi">Рассчитать ИМТ</string>
-    <string name="bmi_underweight">Недостаточный вес</string>
-    <string name="bmi_normal">Нормальный вес</string>
-    <string name="bmi_overweight">Избыточный вес</string>
-    <string name="bmi_obese">Ожирение</string>
-
-    <string name="app_version">Версия: %s</string>
-
-    <string name="no_measurements_title">Нет измерений</string>
-    <string name="no_measurements_description">Добавьте свое первое измерение</string>
-    <string name="empty_state_image">Иллюстрация пустого состояния</string>
-
-    <string name="date_icon_desc">Иконка календаря</string>
-    <string name="error_field_required">Обязательное поле</string>
-    <string name="error_systolic_range">Должно быть между %d и %d</string>
-    <string name="error_diastolic_range">Должно быть между %d и %d</string>
-    <string name="error_pulse_range">Должно быть между %d и %d</string>
-    <string name="error_saving_data">Ошибка сохранения данных</string>
-
-    <!-- About Activity -->
-    <string name="about_description_title">Описание</string>
-    <string name="about_description_text">Pressure Tracker — приложение для отслеживания артериального давления. Позволяет сохранять измерения, строить графики, экспортировать данные и настраивать напоминания.</string>
-    <string name="about_developer_title">Разработчик</string>
-    <string name="about_developer_name">Axelmark</string>
-    <string name="about_developer_email">contact@axelmark.ru</string>
-    <string name="about_license_title">Лицензия</string>
-    <string name="about_copyright_placeholder">© %d Axelmark. Все права защищены.</string>
-    <string name="app_icon_description">Иконка приложения — тонометр</string>
-    <string name="app_version_placeholder">Версия: %s</string>
-
     <string name="reminder_time">Время напоминания</string>
     <string name="repeat">Повторять</string>
     <string name="week_day">День недели</string>
@@ -95,7 +60,51 @@
     <string name="saturday_short">Сб</string>
     <string name="sunday_short">Вс</string>
 
-    <string name="email_icon_desc">Иконка электронной почты</string>
+    <!-- ===== Данные пользователя и ИМТ ===== -->
+    <string name="user_data_title">Данные пользователя</string>
+    <string name="name">Имя</string>
+    <string name="age">Возраст</string>
+    <string name="gender">Пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="height">Рост (см)</string>
+    <string name="weight">Вес (кг)</string>
+    <string name="calculate_bmi">Рассчитать ИМТ</string>
     <string name="bmi_title">Индекс массы тела (ИМТ)</string>
     <string name="bmi_info">18.5–24.9 — норма, менее 18.5 — дефицит, 25–29.9 — избыток, 30+ — ожирение</string>
+    <string name="bmi_underweight">Недостаточный вес</string>
+    <string name="bmi_normal">Нормальный вес</string>
+    <string name="bmi_overweight">Избыточный вес</string>
+    <string name="bmi_obese">Ожирение</string>
+
+    <!-- ===== Сообщения обратной связи и ошибки ===== -->
+    <string name="measurement_saved">Измерение сохранено</string>
+    <string name="check_input_data">Проверьте введенные данные</string>
+    <string name="error_saving_data">Ошибка сохранения данных</string>
+    <string name="error_field_required">Обязательное поле</string>
+    <string name="error_systolic_range">Должно быть между %d и %d</string>
+    <string name="error_diastolic_range">Должно быть между %d и %d</string>
+    <string name="error_pulse_range">Должно быть между %d и %d</string>
+
+    <!-- ===== Экран "О приложении" (About) ===== -->
+    <string name="about_description_title">Описание</string>
+    <string name="about_description_text">Pressure Tracker — приложение для отслеживания артериального давления. Позволяет сохранять измерения, строить графики, экспортировать данные и настраивать напоминания.</string>
+    <string name="about_developer_title">Разработчик</string>
+    <string name="about_developer_name">Axelmark</string>
+    <string name="about_developer_email">contact@axelmark.ru</string>
+    <string name="about_license_title">Лицензия</string>
+    <string name="about_copyright_placeholder">© %d Axelmark. Все права защищены.</string>
+
+    <!-- ===== Состояния (Empty states) и контент-описания (Content descriptions) ===== -->
+    <string name="no_measurements_title">Нет измерений</string>
+    <string name="no_measurements_description">Добавьте свое первое измерение</string>
+    <string name="empty_state_image">Иллюстрация пустого состояния</string>
+    <string name="date_icon_desc">Иконка календаря</string>
+    <string name="email_icon_desc">Иконка электронной почты</string>
+    <string name="app_icon_description">Иконка приложения — тонометр</string>
+
+    <!-- ===== Разное / Технические строки ===== -->
+    <string name="app_version">Версия: %s</string>
+    <string name="app_version_placeholder">Версия: %s</string>
+
 </resources>
